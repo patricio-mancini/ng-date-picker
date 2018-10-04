@@ -1,0 +1,12 @@
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+  .result {
+    margin-top: 2rem;
+    .property {
+      font-weight: bold;
+      margin-right: 1em;
+    }
+  }
+}

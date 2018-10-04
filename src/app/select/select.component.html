@@ -1,0 +1,5 @@
+<select [formControl]="selectControl" [class.placeholder]="selectControl.value === -1" autocomplete="autocomplete">
+  <option *ngIf="placeholder" disabled selected value="-1">{{placeholder}}</option>
+  <option *ngIf="default" selected value="0">{{default}}</option>
+  <option *ngFor="let option of optionsList" [value]="getOptionKey(option)">{{getOptionValue(option)}}</option>
+</select>

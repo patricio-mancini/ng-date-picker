@@ -1,0 +1,8 @@
+<app-card>
+  <h3>Birth Date</h3>
+  <app-date-picker [formControl]="birthDate" minimumYear="1960" maximumYear="2018"></app-date-picker>
+  <div class="result">
+    <span class="property">Timestamp</span>
+    <span class="value">{{birthDate.value}}</span>
+  </div>
+</app-card>
